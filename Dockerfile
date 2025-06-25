@@ -8,7 +8,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install --production
+RUN npm install --production --unsafe-perm
+
 
 COPY . .
 CMD ["node","index.js"]
