@@ -109,7 +109,7 @@ const fun1 = async (roll, semester, instituteCode) => {
     const browser = await puppeteer.launch({
       executablePath:process.env.PUPPETEER_EXECUTABLE_PATH,
         
-      headless: true, // OR 'new' (but avoid 'chrome-launcher')
+      headless: "new", // OR 'new' (but avoid 'chrome-launcher')
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
 
@@ -304,7 +304,7 @@ const fun1 = async (roll, semester, instituteCode) => {
 };
 
 const fun2 = async (rollStart, rollEnd, semester, instituteCode) => {
-  const concurrentProcesses = 5; // Adjust based on server capacity
+  const concurrentProcesses = 3; // Adjust based on server capacity
 
   // Generate an array of roll numbers
   const rollNumbers = Array.from(
