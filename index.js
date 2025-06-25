@@ -3,7 +3,7 @@ import axios from "axios";
 import { createWriteStream } from "fs";
 import fs from "fs"; // For file system operations
 import FormData from "form-data"; // Use 'form-data' package, not 'formdata'
-import writeTocsv from "./csvwriter.js";
+import {writeTocsv} from "./csvwriter.js";
 import cors from "cors"; // Import CORS
 import path from "path";
 import bodyParser from "body-parser";
