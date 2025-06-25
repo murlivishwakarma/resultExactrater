@@ -304,7 +304,7 @@ const fun1 = async (roll, semester, instituteCode) => {
 };
 
 const fun2 = async (rollStart, rollEnd, semester, instituteCode) => {
-  const concurrentProcesses = 3; // Adjust based on server capacity
+  const concurrentProcesses = 5; // Adjust based on server capacity
 
   // Generate an array of roll numbers
   const rollNumbers = Array.from(
